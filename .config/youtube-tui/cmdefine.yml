@@ -1,0 +1,25 @@
+library: loadpage library
+resume: mpv sprop pause no ;; echo mpv Player resumed
+sub: sync
+r: reload
+channel: loadpage channel
+print: echo
+tpause: mpv tprop pause ;; echo success Toggled player pause
+exit: quit
+playlist: loadpage playlist
+h: help
+v: version
+bookmarks: loadpage bookmarks
+cp: copy
+x: quit
+pause: mpv sprop pause yes ;; echo mpv Player paused
+q: quit
+feed: loadpage feed
+popular: loadpage popular
+video: loadpage video
+next: mpv playlist-next ;; echo mpv Skipped
+trending: loadpage trending
+search: loadpage search
+watchhistory: loadpage watchhistory
+rc: reload configs
+back: mpv playlist-previous ;; echo mpv Skipped

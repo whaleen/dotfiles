@@ -1,0 +1,6 @@
+@anthropic-ai/claude-code
+@google/gemini-cli
+@openai/codex
+@vibe-kit/grok-cli
+corepack
+npm
