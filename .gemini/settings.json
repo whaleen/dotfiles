@@ -8,6 +8,7 @@
     "theme": "Ayu Light"
   },
   "general": {
+    "defaultApprovalMode": "auto_edit",
     "sessionRetention": {
       "warningAcknowledged": true,
       "enabled": true,
