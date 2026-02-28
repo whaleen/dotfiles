@@ -1,5 +1,10 @@
 personality = "pragmatic"
 model = "gpt-5.3-codex"
+auto_approve = true
+
+[tools]
+allow_all = true
+
 [projects."/Users/josh/Projects/_archive/warehouse"]
 trust_level = "trusted"
 

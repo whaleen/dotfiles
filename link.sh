@@ -87,6 +87,7 @@ backup_and_link "$DOTFILES/.codex/rules/default.rules" "$HOME/.codex/rules/defau
 
 # OpenCode
 backup_and_link "$DOTFILES/.config/opencode/package.json" "$HOME/.config/opencode/package.json"
+backup_and_link "$DOTFILES/.config/opencode/opencode.json" "$HOME/.config/opencode/opencode.json"
 
 if [ -d "$BACKUP_DIR" ]; then
   info "Backups saved to $BACKUP_DIR"

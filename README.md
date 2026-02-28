@@ -41,6 +41,7 @@ Personal configuration files and bootstrap scripts for macOS.
 - `.gemini/` — Gemini CLI configuration (settings, projects, trusted folders)
 - `.codex/` — Codex CLI configuration and global rules
 - `.config/opencode/package.json` — OpenCode plugin environment
+- `.config/opencode/opencode.json` — OpenCode settings and autonomous mode
 
 ## Package Inventories
 
