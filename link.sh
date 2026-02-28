@@ -80,6 +80,14 @@ backup_and_link "$DOTFILES/.claude.json"           "$HOME/.claude.json"
 backup_and_link_contents "$DOTFILES/.gemini" "$HOME/.gemini" \
   "settings.json" "projects.json" "trustedFolders.json"
 
+# Codex
+backup_and_link_contents "$DOTFILES/.codex" "$HOME/.codex" \
+  "config.toml"
+backup_and_link "$DOTFILES/.codex/rules/default.rules" "$HOME/.codex/rules/default.rules"
+
+# OpenCode
+backup_and_link "$DOTFILES/.config/opencode/package.json" "$HOME/.config/opencode/package.json"
+
 if [ -d "$BACKUP_DIR" ]; then
   info "Backups saved to $BACKUP_DIR"
 else

@@ -39,6 +39,8 @@ Personal configuration files and bootstrap scripts for macOS.
 - `.claude/settings.json` — Claude Code settings
 - `.claude.json` — Global Claude metrics and session state
 - `.gemini/` — Gemini CLI configuration (settings, projects, trusted folders)
+- `.codex/` — Codex CLI configuration and global rules
+- `.config/opencode/package.json` — OpenCode plugin environment
 
 ## Package Inventories
 
