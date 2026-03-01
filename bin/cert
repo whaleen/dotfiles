@@ -26,10 +26,10 @@ fi
 VERSION=$(npm view cntx-ui version)
 
 # 4. Inject variables and copy to clipboard
-cat "$TEMPLATE" 
-  | sed "s|\[PROJECT NAME\]|$PROJECT_NAME|g" 
-  | sed "s|\[PATH\]|${PROJECT_PATH#/Users/josh/Projects/}|g" 
-  | sed "s|\[VERSION\]|$VERSION|g" 
+cat "$TEMPLATE" \
+  | sed "s|\[PROJECT NAME\]|$PROJECT_NAME|g" \
+  | sed "s|\[PATH\]|${PROJECT_PATH#/Users/josh/Projects/}|g" \
+  | sed "s|\[VERSION\]|$VERSION|g" \
   | pbcopy
 
 echo "✅ Prompt for '$PROJECT_NAME' (v$VERSION) copied to clipboard!"
