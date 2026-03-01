@@ -48,8 +48,9 @@ info "Linking dotfiles"
 
 # Shell configs
 backup_and_link "$DOTFILES/.zshrc"        "$HOME/.zshrc"
-backup_and_link "$DOTFILES/.gitconfig"    "$HOME/.gitconfig"
-backup_and_link "$DOTFILES/.bash_profile" "$HOME/.bash_profile"
+backup_and_link "$DOTFILES/.gitconfig"     "$HOME/.gitconfig"
+backup_and_link "$DOTFILES/.npmrc"         "$HOME/.npmrc"
+backup_and_link "$DOTFILES/.bash_profile"  "$HOME/.bash_profile"
 backup_and_link "$DOTFILES/.profile"      "$HOME/.profile"
 
 # Ghostty (uses ~/Library/Application Support, not ~/.config)

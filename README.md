@@ -23,6 +23,7 @@ Personal configuration files and bootstrap scripts for macOS.
 - `.bash_profile` — Bash profile (Solana, broot, cargo)
 - `.profile` — Login profile (cargo, nvm, Solana)
 - `.gitconfig` — Git user config
+- `.npmrc` — npm registry authentication (uses NPM_TOKEN env var)
 
 ## App Configs
 

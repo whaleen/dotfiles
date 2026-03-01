@@ -1,6 +1,6 @@
 personality = "pragmatic"
 model = "gpt-5.3-codex"
-auto_approve = true
+ask_for_approval = "never"
 
 [tools]
 allow_all = true
