@@ -154,3 +154,7 @@ eval "$(zoxide init zsh)"
 
 # broot
 source /Users/josh/.config/broot/launcher/bash/br
+
+# AI CLI YOLO Aliases
+alias codex="codex --dangerously-bypass-approvals-and-sandbox"
+alias claude="claude --dangerously-skip-permissions"
