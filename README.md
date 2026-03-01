@@ -14,8 +14,9 @@ Personal configuration files and bootstrap scripts for macOS.
 
 ## Scripts
 
-- `install.sh` — Full bootstrap: Xcode CLT, Homebrew, brew bundle, Oh My Zsh, nvm, Node, npm globals, Rust, cargo crates, bun, Solana CLI, avm/Anchor, symlinks, macOS defaults
-- `link.sh` — Symlink all config files to their expected locations (backs up existing files to `~/.dotfiles-backup/`)
+- `install.sh` — Full bootstrap script
+- `link.sh` — Symlink configuration files
+- `bin/cert` — Quickly generate and copy `cntx-ui` certification prompts using `fzf`
 
 ## Shell
 
