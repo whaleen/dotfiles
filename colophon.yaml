@@ -1,0 +1,224 @@
+# Colophon — tools, stack, and setup
+# This file is fetched by the portfolio site's sync script.
+
+editors:
+  name: Editors
+  items:
+    - name: Cursor
+      url: https://cursor.com
+      note: Primary editor, AI-native VS Code fork
+    - name: Helix
+      url: https://helix-editor.com
+      note: Terminal editor for quick edits
+
+terminals:
+  name: Terminals
+  items:
+    - name: Ghostty
+      url: https://ghostty.org
+      note: Primary terminal, GPU-accelerated
+    - name: Warp
+      url: https://warp.dev
+      note: AI-powered terminal
+
+ai:
+  name: AI Tools
+  items:
+    - name: Claude Code
+      url: https://github.com/anthropics/claude-code
+      note: Anthropic CLI agent
+    - name: Gemini CLI
+      url: https://github.com/google-gemini/gemini-cli
+      note: Google AI CLI
+    - name: Codex
+      url: https://github.com/openai/codex
+      note: OpenAI CLI agent
+    - name: Grok CLI
+      url: https://github.com/vibe-kit/grok-cli
+      note: xAI CLI
+    - name: OpenCode
+      url: https://github.com/anomalyco/opencode
+      note: TUI coding agent
+
+shell:
+  name: Shell & CLI
+  items:
+    - name: zsh
+      note: Shell with Oh My Zsh
+    - name: fzf
+      url: https://github.com/junegunn/fzf
+      note: Fuzzy finder
+    - name: ripgrep
+      url: https://github.com/BurntSushi/ripgrep
+      note: Fast search
+    - name: fd
+      url: https://github.com/sharkdp/fd
+      note: Fast find
+    - name: bat
+      url: https://github.com/sharkdp/bat
+      note: cat with syntax highlighting
+    - name: lsd
+      url: https://github.com/lsd-rs/lsd
+      note: Modern ls
+    - name: yazi
+      url: https://github.com/sxyazi/yazi
+      note: Terminal file manager
+    - name: btop
+      url: https://github.com/aristocratos/btop
+      note: System monitor
+    - name: zoxide
+      url: https://github.com/ajeetdsouza/zoxide
+      note: Smarter cd
+    - name: jq
+      url: https://github.com/jqlang/jq
+      note: JSON processor
+    - name: glow
+      url: https://github.com/charmbracelet/glow
+      note: Terminal markdown viewer
+    - name: lazygit
+      url: https://github.com/jesseduffield/lazygit
+      note: Terminal git UI
+
+languages:
+  name: Languages & Runtimes
+  items:
+    - name: Node.js
+      url: https://nodejs.org
+      note: Via nvm, v22
+    - name: Rust
+      url: https://www.rust-lang.org
+      note: Via rustup
+    - name: Go
+      url: https://go.dev
+    - name: Python
+      url: https://python.org
+      note: "3.13, via pipx"
+    - name: Solana
+      url: https://solana.com
+      note: CLI + Anchor/AVM
+
+databases:
+  name: Databases & Backend
+  items:
+    - name: PostgreSQL
+      url: https://postgresql.org
+      note: "16"
+    - name: Supabase
+      url: https://supabase.com
+      note: CLI + hosted
+
+deployment:
+  name: Deployment
+  items:
+    - name: Netlify
+      url: https://netlify.com
+    - name: Vercel
+      url: https://vercel.com
+    - name: Fly.io
+      url: https://fly.io
+    - name: Railway
+      url: https://railway.com
+    - name: Doppler
+      url: https://doppler.com
+      note: Secrets management
+
+security:
+  name: Security
+  items:
+    - name: Bitwarden
+      url: https://bitwarden.com
+      note: Password manager + CLI
+    - name: GnuPG
+      note: Encryption & signing
+    - name: mkcert
+      url: https://github.com/FiloSottile/mkcert
+      note: Local HTTPS certs
+    - name: Gitleaks
+      url: https://github.com/gitleaks/gitleaks
+      note: Secret scanning
+    - name: Trufflehog
+      url: https://github.com/trufflesecurity/trufflehog
+      note: Credential scanning
+
+media:
+  name: Media
+  items:
+    - name: ffmpeg
+      url: https://ffmpeg.org
+      note: Video/audio processing
+    - name: ImageMagick
+      url: https://imagemagick.org
+      note: Image processing
+    - name: yt-dlp
+      url: https://github.com/yt-dlp/yt-dlp
+      note: Media downloader
+    - name: mpv
+      url: https://mpv.io
+      note: Terminal media player
+    - name: Shotcut
+      url: https://shotcut.org
+      note: Video editor
+    - name: chafa
+      url: https://github.com/hpjansson/chafa
+      note: Terminal image viewer
+
+theme:
+  name: Theme System
+  description: >
+    All tools share the Vesper color palette via a centralized theme system.
+    Colors are defined once in vesper.sh and propagated to Ghostty, Warp,
+    Cursor, Yazi, btop, lsd, and fzf through template generation.
+  palette:
+    bg: "#101010"
+    fg: "#ffffff"
+    accent: "#FFC799"
+    surface: "#232323"
+    muted: "#7E7E7E"
+    red: "#f5a191"
+    green: "#90b99f"
+    yellow: "#e6b99d"
+    blue: "#aca1cf"
+    magenta: "#e29eca"
+    cyan: "#ea83a5"
+
+dotfiles:
+  name: Dotfiles
+  description: >
+    Managed with GNU Stow. Each tool gets its own package directory
+    mirroring $HOME paths. One command restows everything.
+  url: https://github.com/whaleen/dotfiles
+  packages:
+    - zsh
+    - bash
+    - git
+    - npm
+    - ghostty
+    - cursor
+    - gh
+    - yabai
+    - btop
+    - yazi
+    - lsd
+    - warp
+    - claude
+    - gemini
+    - codex
+    - opencode
+    - scripts
+
+site:
+  name: This Site
+  items:
+    - name: Eleventy
+      url: https://11ty.dev
+      note: Static site generator
+    - name: Nunjucks
+      note: Templating
+    - name: Tachyons
+      url: https://tachyons.io
+      note: Utility CSS
+    - name: GitHub API
+      note: Project data source
+    - name: Netlify
+      url: https://netlify.com
+      note: Hosting & deploy
