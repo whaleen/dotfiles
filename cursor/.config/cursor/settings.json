@@ -1,0 +1,13 @@
+{
+    "window.commandCenter": true,
+    "workbench.sideBar.location": "right",
+    "security.promptForLocalFileProtocolHandling": false,
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
+    "git.confirmSync": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Cursor Light",
+    "editor.accessibilitySupport": "off",
+    "workbench.preferredDarkColorTheme": "Vesper Custom"
+}

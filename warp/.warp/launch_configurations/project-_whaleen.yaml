@@ -1,0 +1,10 @@
+---
+name: Project - _whaleen
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: _whaleen
+        layout:
+          cwd: /Users/josh/Projects/_whaleen
+          is_focused: true

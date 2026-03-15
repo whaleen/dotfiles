@@ -1,0 +1,10 @@
+---
+name: Project - _archive
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: _archive
+        layout:
+          cwd: /Users/josh/Projects/_archive
+          is_focused: true

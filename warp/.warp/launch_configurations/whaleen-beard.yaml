@@ -1,0 +1,10 @@
+---
+name: Whaleen - beard
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: beard
+        layout:
+          cwd: /Users/josh/Projects/_whaleen/beard
+          is_focused: true

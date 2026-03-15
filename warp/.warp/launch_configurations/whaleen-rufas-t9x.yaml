@@ -1,0 +1,10 @@
+---
+name: Whaleen - rufas-t9x
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: rufas-t9x
+        layout:
+          cwd: /Users/josh/Projects/_whaleen/rufas-t9x
+          is_focused: true

@@ -1,0 +1,10 @@
+---
+name: Whaleen - ephemeral-text
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: ephemeral-text
+        layout:
+          cwd: /Users/josh/Projects/_whaleen/ephemeral-text
+          is_focused: true

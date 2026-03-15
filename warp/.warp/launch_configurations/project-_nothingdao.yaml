@@ -1,0 +1,10 @@
+---
+name: Project - _nothingdao
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: _nothingdao
+        layout:
+          cwd: /Users/josh/Projects/_nothingdao
+          is_focused: true

@@ -1,0 +1,24 @@
+# {{THEME_NAME}} theme for Warp (generated — do not edit by hand)
+background: "{{BG}}"
+accent: "{{ACCENT}}"
+foreground: "{{FG}}"
+terminal_colors:
+  normal:
+    white: "{{WHITE}}"
+    green: "{{GREEN}}"
+    black: "{{BLACK}}"
+    red: "{{RED}}"
+    cyan: "{{CYAN}}"
+    yellow: "{{YELLOW}}"
+    magenta: "{{MAGENTA}}"
+    blue: "{{BLUE}}"
+  bright:
+    green: "{{BRIGHT_GREEN}}"
+    blue: "{{BRIGHT_BLUE}}"
+    yellow: "{{BRIGHT_YELLOW}}"
+    white: "{{BRIGHT_WHITE}}"
+    magenta: "{{BRIGHT_MAGENTA}}"
+    black: "{{BRIGHT_BLACK}}"
+    red: "{{BRIGHT_RED}}"
+    cyan: "{{BRIGHT_CYAN}}"
+details: "darker"

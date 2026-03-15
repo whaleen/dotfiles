@@ -1,0 +1,10 @@
+---
+name: Project - _orthfx
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: _orthfx
+        layout:
+          cwd: /Users/josh/Projects/_orthfx
+          is_focused: true

@@ -1,0 +1,16 @@
+{
+  "name": "vesper-custom",
+  "displayName": "Vesper Custom",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vesper Custom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vesper-custom-color-theme.json"
+      }
+    ]
+  }
+}

@@ -124,9 +124,25 @@ else
   echo "    avm not found — install it via: cargo install --git https://github.com/coral-xyz/anchor avm"
 fi
 
-# ---------- 11. Symlinks ----------
-info "Symlinking dotfiles"
-bash "$DOTFILES/link.sh"
+# ---------- 11. Stow dotfiles ----------
+info "Stowing dotfiles"
+
+STOW_PACKAGES=(
+  zsh bash git npm
+  ghostty cursor gh yabai btop yazi opencode lsd
+  warp claude gemini codex scripts
+)
+
+for pkg in "${STOW_PACKAGES[@]}"; do
+  stow -t "$HOME" -d "$DOTFILES" --restow "$pkg"
+  ok "$pkg"
+done
+
+# Cursor (macOS reads from ~/Library/Application Support, not ~/.config)
+mkdir -p "$HOME/Library/Application Support/Cursor/User"
+ln -sf "$DOTFILES/cursor/.config/cursor/settings.json" \
+       "$HOME/Library/Application Support/Cursor/User/settings.json"
+ok "cursor → Application Support"
 
 # ---------- 12. macOS defaults ----------
 info "macOS defaults"

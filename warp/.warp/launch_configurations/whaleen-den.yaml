@@ -1,0 +1,10 @@
+---
+name: Whaleen - den
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: den
+        layout:
+          cwd: /Users/josh/Projects/_whaleen/den
+          is_focused: true

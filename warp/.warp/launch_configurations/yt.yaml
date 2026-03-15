@@ -1,0 +1,12 @@
+---
+name: YouTube
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: YouTube TUI
+        layout:
+          cwd: /Users/josh
+          is_focused: true
+          commands:
+            - exec: yt

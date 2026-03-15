@@ -1,0 +1,93 @@
+# {{THEME_NAME}} theme for Yazi (generated — do not edit by hand)
+
+[manager]
+cwd = { fg = "{{ACCENT}}" }
+
+hovered         = { reversed = true }
+preview_hovered = { underline = true }
+
+find_keyword  = { fg = "{{ACCENT}}", bold = true, italic = true, underline = true }
+find_position = { fg = "{{MAGENTA}}", bg = "reset", bold = true, italic = true }
+
+marker_copied   = { fg = "{{BRIGHT_GREEN}}", bg = "{{BRIGHT_GREEN}}" }
+marker_cut      = { fg = "{{BRIGHT_RED}}", bg = "{{BRIGHT_RED}}" }
+marker_marked   = { fg = "{{BRIGHT_CYAN}}", bg = "{{BRIGHT_CYAN}}" }
+marker_selected = { fg = "{{ACCENT}}", bg = "{{ACCENT}}" }
+
+tab_active   = { reversed = true }
+tab_inactive = {}
+tab_width    = 1
+
+count_copied   = { fg = "{{BG}}", bg = "{{GREEN}}" }
+count_cut      = { fg = "{{BG}}", bg = "{{RED}}" }
+count_selected = { fg = "{{BG}}", bg = "{{ACCENT}}" }
+
+border_symbol = "│"
+border_style  = { fg = "{{DIM}}" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "{{DIM}}" }
+
+mode_normal = { fg = "{{BG}}", bg = "{{BLUE}}", bold = true }
+mode_select = { fg = "{{BG}}", bg = "{{GREEN}}", bold = true }
+mode_unset  = { fg = "{{BG}}", bg = "{{RED}}", bold = true }
+
+progress_label  = { bold = true }
+progress_normal = { fg = "{{BLUE}}", bg = "{{BG}}" }
+progress_error  = { fg = "{{RED}}", bg = "{{BG}}" }
+
+permissions_t = { fg = "{{GREEN}}" }
+permissions_r = { fg = "{{YELLOW}}" }
+permissions_w = { fg = "{{RED}}" }
+permissions_x = { fg = "{{CYAN}}" }
+permissions_s = { fg = "{{DIM}}" }
+
+[input]
+border   = { fg = "{{BLUE}}" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[select]
+border   = { fg = "{{BLUE}}" }
+active   = { fg = "{{MAGENTA}}", bold = true }
+inactive = {}
+
+[completion]
+border   = { fg = "{{BLUE}}" }
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "{{BLUE}}" }
+title   = {}
+hovered = { fg = "{{MAGENTA}}", underline = true }
+
+[which]
+mask            = { bg = "{{BG}}" }
+cand            = { fg = "{{CYAN}}" }
+rest            = { fg = "{{DIM}}" }
+desc            = { fg = "{{MAGENTA}}" }
+separator       = "  "
+separator_style = { fg = "{{DIM}}" }
+
+[help]
+on      = { fg = "{{CYAN}}" }
+run     = { fg = "{{MAGENTA}}" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "{{BG}}", bg = "{{SUBTLE}}" }
+
+[filetype]
+
+rules = [
+	{ mime = "image/*", fg = "{{CYAN}}" },
+	{ mime = "{audio,video}/*", fg = "{{YELLOW}}" },
+	{ mime = "application/*zip*", fg = "{{MAGENTA}}" },
+	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "{{MAGENTA}}" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "{{GREEN}}" },
+	{ name = "*", fg = "{{SUBTLE}}" },
+	{ name = "*/", fg = "{{BLUE}}" },
+]

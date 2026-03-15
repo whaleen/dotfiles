@@ -1,0 +1,39 @@
+# {{THEME_NAME}} theme for lsd (generated — do not edit by hand)
+user: "{{YELLOW}}"
+group: "{{DIM}}"
+permission:
+  read: "{{YELLOW}}"
+  write: "{{RED}}"
+  exec: "{{GREEN}}"
+  exec-sticky: "{{BRIGHT_GREEN}}"
+  no-access: "{{SURFACE4}}"
+  octal: "{{DIM}}"
+  acl: "{{CYAN}}"
+  context: "{{MAGENTA}}"
+date:
+  hour-old: "{{SUBTLE}}"
+  day-old: "{{DIM}}"
+  older: "{{SURFACE4}}"
+size:
+  none: "{{SURFACE4}}"
+  small: "{{GREEN}}"
+  medium: "{{YELLOW}}"
+  large: "{{ACCENT}}"
+inode:
+  valid: "{{DIM}}"
+  invalid: "{{BRIGHT_RED}}"
+links:
+  valid: "{{CYAN}}"
+  invalid: "{{BRIGHT_RED}}"
+tree-edge: "{{SURFACE4}}"
+git-status:
+  default: "{{DIM}}"
+  unmodified: "{{DIM}}"
+  ignored: "{{SURFACE4}}"
+  new-in-index: "{{BRIGHT_GREEN}}"
+  new-in-workdir: "{{BRIGHT_GREEN}}"
+  typechange: "{{ACCENT}}"
+  deleted: "{{BRIGHT_RED}}"
+  renamed: "{{BLUE}}"
+  modified: "{{ACCENT}}"
+  conflicted: "{{BRIGHT_RED}}"

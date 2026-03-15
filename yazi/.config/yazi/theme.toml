@@ -1,0 +1,93 @@
+# Vesper theme for Yazi (generated — do not edit by hand)
+
+[manager]
+cwd = { fg = "#FFC799" }
+
+hovered         = { reversed = true }
+preview_hovered = { underline = true }
+
+find_keyword  = { fg = "#FFC799", bold = true, italic = true, underline = true }
+find_position = { fg = "#e29eca", bg = "reset", bold = true, italic = true }
+
+marker_copied   = { fg = "#99FFE4", bg = "#99FFE4" }
+marker_cut      = { fg = "#ff8080", bg = "#ff8080" }
+marker_marked   = { fg = "#f591b2", bg = "#f591b2" }
+marker_selected = { fg = "#FFC799", bg = "#FFC799" }
+
+tab_active   = { reversed = true }
+tab_inactive = {}
+tab_width    = 1
+
+count_copied   = { fg = "#101010", bg = "#90b99f" }
+count_cut      = { fg = "#101010", bg = "#f5a191" }
+count_selected = { fg = "#101010", bg = "#FFC799" }
+
+border_symbol = "│"
+border_style  = { fg = "#7E7E7E" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#7E7E7E" }
+
+mode_normal = { fg = "#101010", bg = "#aca1cf", bold = true }
+mode_select = { fg = "#101010", bg = "#90b99f", bold = true }
+mode_unset  = { fg = "#101010", bg = "#f5a191", bold = true }
+
+progress_label  = { bold = true }
+progress_normal = { fg = "#aca1cf", bg = "#101010" }
+progress_error  = { fg = "#f5a191", bg = "#101010" }
+
+permissions_t = { fg = "#90b99f" }
+permissions_r = { fg = "#e6b99d" }
+permissions_w = { fg = "#f5a191" }
+permissions_x = { fg = "#ea83a5" }
+permissions_s = { fg = "#7E7E7E" }
+
+[input]
+border   = { fg = "#aca1cf" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[select]
+border   = { fg = "#aca1cf" }
+active   = { fg = "#e29eca", bold = true }
+inactive = {}
+
+[completion]
+border   = { fg = "#aca1cf" }
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "#aca1cf" }
+title   = {}
+hovered = { fg = "#e29eca", underline = true }
+
+[which]
+mask            = { bg = "#101010" }
+cand            = { fg = "#ea83a5" }
+rest            = { fg = "#7E7E7E" }
+desc            = { fg = "#e29eca" }
+separator       = "  "
+separator_style = { fg = "#7E7E7E" }
+
+[help]
+on      = { fg = "#ea83a5" }
+run     = { fg = "#e29eca" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#101010", bg = "#A0A0A0" }
+
+[filetype]
+
+rules = [
+	{ mime = "image/*", fg = "#ea83a5" },
+	{ mime = "{audio,video}/*", fg = "#e6b99d" },
+	{ mime = "application/*zip*", fg = "#e29eca" },
+	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "#e29eca" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "#90b99f" },
+	{ name = "*", fg = "#A0A0A0" },
+	{ name = "*/", fg = "#aca1cf" },
+]

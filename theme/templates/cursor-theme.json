@@ -1,0 +1,252 @@
+{
+  "name": "{{THEME_NAME}}",
+  "colors": {
+    "editor.background": "{{BG}}",
+    "editor.foreground": "{{FG}}",
+    "editor.selectionBackground": "#FFFFFF25",
+    "editor.selectionHighlightBackground": "#FFFFFF25",
+    "editorLineNumber.foreground": "{{COMMENT}}",
+    "editorGroupHeader.tabsBackground": "{{BG}}",
+    "editorWidget.background": "{{BG}}",
+    "editorWarning.foreground": "{{ACCENT}}",
+    "editorError.foreground": "{{BRIGHT_RED}}",
+    "editorOverviewRuler.border": "{{BG}}",
+    "editorGutter.addedBackground": "{{BRIGHT_GREEN}}",
+    "editorGutter.deletedBackground": "{{BRIGHT_RED}}",
+    "editorGutter.modifiedBackground": "{{ACCENT}}",
+    "diffEditor.insertedTextBackground": "{{BRIGHT_GREEN}}15",
+    "diffEditor.insertedLineBackground": "{{BRIGHT_GREEN}}15",
+    "diffEditor.removedTextBackground": "{{BRIGHT_RED}}15",
+    "diffEditor.removedLineBackground": "{{BRIGHT_RED}}15",
+    "editorInlayHint.foreground": "{{SUBTLE}}",
+    "editorInlayHint.background": "{{SURFACE1}}",
+    "sideBar.background": "{{BG}}",
+    "sideBarTitle.foreground": "{{SUBTLE}}",
+    "sideBarSectionHeader.foreground": "{{SUBTLE}}",
+    "sideBarSectionHeader.background": "{{BG}}",
+    "activityBar.background": "{{BG}}",
+    "activityBar.foreground": "{{SUBTLE}}",
+    "activityBarBadge.background": "{{ACCENT}}",
+    "activityBarBadge.foreground": "#000",
+    "titleBar.activeBackground": "{{BG}}",
+    "titleBar.inactiveBackground": "{{BG}}",
+    "titleBar.activeForeground": "{{DIM}}",
+    "titleBar.inactiveForeground": "#707070",
+    "tab.border": "{{BG}}",
+    "tab.activeBackground": "{{SURFACE0}}",
+    "tab.inactiveBackground": "{{BG}}",
+    "statusBar.debuggingForeground": "{{FG}}",
+    "statusBar.debuggingBackground": "#FF7300",
+    "statusBar.background": "{{BG}}",
+    "statusBar.foreground": "{{SUBTLE}}",
+    "statusBarItem.remoteBackground": "{{ACCENT}}",
+    "statusBarItem.remoteForeground": "#000",
+    "list.activeSelectionForeground": "{{ACCENT}}",
+    "list.inactiveSelectionBackground": "{{SURFACE2}}",
+    "badge.background": "{{ACCENT}}",
+    "badge.foreground": "#000",
+    "button.background": "{{ACCENT}}",
+    "button.hoverBackground": "#FFCFA8",
+    "button.foreground": "#000",
+    "focusBorder": "{{ACCENT}}",
+    "icon.foreground": "{{SUBTLE}}",
+    "input.background": "{{SURFACE1}}",
+    "list.activeSelectionBackground": "{{SURFACE2}}",
+    "list.hoverBackground": "{{SURFACE3}}",
+    "list.errorForeground": "{{BRIGHT_RED}}",
+    "list.highlightForeground": "{{ACCENT}}",
+    "selection.background": "#666",
+    "editorBracketHighlight.foreground1": "{{SUBTLE}}",
+    "editorBracketHighlight.foreground2": "{{SUBTLE}}",
+    "editorBracketHighlight.foreground3": "{{SUBTLE}}",
+    "editorBracketHighlight.foreground4": "{{SUBTLE}}",
+    "editorBracketHighlight.foreground5": "{{SUBTLE}}",
+    "editorBracketHighlight.foreground6": "{{SUBTLE}}",
+    "editorBracketHighlight.unexpectedBracket.foreground": "{{BRIGHT_RED}}",
+    "textLink.foreground": "{{ACCENT}}",
+    "textLink.activeForeground": "#FFCFA8",
+    "editorHoverWidget.background": "{{SURFACE0}}",
+    "editorHoverWidget.border": "{{SURFACE3}}",
+    "scrollbarSlider.background": "{{SURFACE4}}80",
+    "scrollbarSlider.hoverBackground": "{{SURFACE4}}",
+    "settings.modifiedItemIndicator": "{{ACCENT}}"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#8b8b8b94" }
+    },
+    {
+      "name": "Variables",
+      "scope": ["variable", "string constant.other.placeholder", "entity.name.tag"],
+      "settings": { "foreground": "{{FG}}" }
+    },
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": { "foreground": "{{BRIGHT_RED}}" }
+    },
+    {
+      "name": "Keyword, Storage",
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Operator, Control",
+      "scope": [
+        "keyword.control", "constant.other.color",
+        "punctuation.definition.tag", "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html", "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html", "punctuation.section.embedded",
+        "keyword.other.template", "keyword.other.substitution"
+      ],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "Function, Special Method",
+      "scope": [
+        "entity.name.function", "variable.function",
+        "support.function", "keyword.other.special-method"
+      ],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "Number, Constant, Boolean",
+      "scope": [
+        "constant.numeric", "support.constant", "constant.character",
+        "constant.escape", "keyword.other.unit", "keyword.other",
+        "constant.language.boolean"
+      ],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "String, Symbols",
+      "scope": [
+        "string", "constant.other.symbol", "constant.other.key",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": { "foreground": "{{BRIGHT_GREEN}}" }
+    },
+    {
+      "name": "Class, Support",
+      "scope": [
+        "entity.name", "support.type", "support.class",
+        "support.other.namespace.use.php", "meta.use.php",
+        "support.other.namespace.php", "markup.changed.git_gutter",
+        "support.type.sys-types"
+      ],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "CSS Property",
+      "scope": [
+        "source.css support.type.property-name",
+        "source.sass support.type.property-name",
+        "source.scss support.type.property-name",
+        "source.less support.type.property-name",
+        "source.stylus support.type.property-name",
+        "source.postcss support.type.property-name",
+        "support.type.vendored.property-name.css",
+        "meta.property-name.css", "meta.property-value.scss",
+        "meta.property-value.css"
+      ],
+      "settings": { "foreground": "{{FG}}" }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": ["entity.name.module.js", "variable.import.parameter.js", "variable.other.class.js"],
+      "settings": { "foreground": "{{BRIGHT_RED}}" }
+    },
+    {
+      "name": "Language methods",
+      "scope": ["variable.language"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Attributes",
+      "scope": ["entity.other.attribute-name"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "HTML Attributes",
+      "scope": ["text.html.basic entity.other.attribute-name.html", "text.html.basic entity.other.attribute-name"],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "CSS Classes & IDs",
+      "scope": ["entity.other.attribute-name.class", "entity.other.attribute-name.id"],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "Inserted",
+      "scope": ["markup.inserted"],
+      "settings": { "foreground": "{{BRIGHT_GREEN}}" }
+    },
+    {
+      "name": "Deleted",
+      "scope": ["markup.deleted"],
+      "settings": { "foreground": "{{BRIGHT_RED}}" }
+    },
+    {
+      "name": "Changed",
+      "scope": ["markup.changed"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": ["string.regexp"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Escape Characters",
+      "scope": ["constant.character.escape"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "URL",
+      "scope": ["*url*", "*link*", "*uri*"],
+      "settings": { "fontStyle": "underline" }
+    },
+    {
+      "name": "JSON Key",
+      "scope": ["source.json meta.structure.dictionary.json support.type.property-name.json"],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "Markdown - Plain",
+      "scope": ["text.html.markdown", "punctuation.definition.list_item.markdown"],
+      "settings": { "foreground": "{{FG}}" }
+    },
+    {
+      "name": "Markdown - Heading",
+      "scope": ["markdown.heading", "markup.heading | markup.heading entity.name", "markup.heading"],
+      "settings": { "foreground": "{{ACCENT}}" }
+    },
+    {
+      "name": "Markdown - Raw Inline",
+      "scope": ["text.html.markdown markup.inline.raw.markdown"],
+      "settings": { "foreground": "{{SUBTLE}}" }
+    },
+    {
+      "name": "Markup - Bold",
+      "scope": ["markup.bold", "markup.bold string"],
+      "settings": { "fontStyle": "bold", "foreground": "{{FG}}" }
+    },
+    {
+      "name": "Markup - Italic",
+      "scope": ["markup.italic"],
+      "settings": { "fontStyle": "italic", "foreground": "{{FG}}" }
+    },
+    {
+      "name": "Markup - Underline",
+      "scope": ["markup.underline"],
+      "settings": { "fontStyle": "underline", "foreground": "{{ACCENT}}" }
+    }
+  ]
+}

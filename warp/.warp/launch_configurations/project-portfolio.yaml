@@ -1,0 +1,10 @@
+---
+name: Project - portfolio
+active_window_index: 0
+windows:
+  - active_tab_index: 0
+    tabs:
+      - title: portfolio
+        layout:
+          cwd: /Users/josh/Projects/portfolio
+          is_focused: true
