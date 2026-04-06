@@ -4,6 +4,9 @@
 [mgr]
 cwd = { fg = "{{ACCENT}}" }
 
+icon_folder = { fg = "{{FG}}" }
+icon_file   = { fg = "{{SUBTLE}}" }
+
 find_keyword  = { fg = "{{ACCENT}}", bold = true, italic = true, underline = true }
 find_position = { fg = "{{MAGENTA}}", bg = "reset", bold = true, italic = true }
 

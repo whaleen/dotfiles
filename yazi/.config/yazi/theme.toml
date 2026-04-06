@@ -4,6 +4,9 @@
 [mgr]
 cwd = { fg = "#C3A6FF" }
 
+icon_folder = { fg = "#ffffff" }
+icon_file   = { fg = "#A0A0A0" }
+
 find_keyword  = { fg = "#C3A6FF", bold = true, italic = true, underline = true }
 find_position = { fg = "#e29eca", bg = "reset", bold = true, italic = true }
 
