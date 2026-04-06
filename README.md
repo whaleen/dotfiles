@@ -12,7 +12,7 @@ Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 # Re-stow dotfiles only (no installs)
 stow -t ~ -d ~/Projects/_whaleen/dotfiles --restow zsh bash git npm \
   ghostty cursor gh yabai skhd sketchybar btop yazi opencode lsd \
-  warp claude gemini codex scripts
+  warp claude gemini codex cmux scripts
 ```
 
 ## Structure
@@ -39,6 +39,7 @@ dotfiles/
   claude/           .claude/CLAUDE.md, .claude/settings.json
   gemini/           .gemini/settings.json
   codex/            .codex/config.toml
+  cmux/             .config/cmux/settings.json
   scripts/          .local/bin/cert
 ```
 

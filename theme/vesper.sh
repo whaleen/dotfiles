@@ -1,6 +1,6 @@
 #!/bin/bash
-# Vesper — master color palette
-# Edit this file, then run ./theme/generate.sh to propagate everywhere.
+# Vesper — original palette (archived, superseded by whaleen.sh)
+# Not used by generate.sh.
 
 THEME_NAME="Vesper"
 
