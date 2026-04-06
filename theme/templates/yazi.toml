@@ -89,6 +89,6 @@ rules = [
 	{ mime = "application/*zip*", fg = "{{MAGENTA}}" },
 	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "{{MAGENTA}}" },
 	{ mime = "application/{pdf,doc,rtf}", fg = "{{GREEN}}" },
+	{ mime = "inode/directory", fg = "{{FG}}" },
 	{ url = "*", fg = "{{SUBTLE}}" },
-	{ url = "*/", fg = "{{FG}}" },
 ]
