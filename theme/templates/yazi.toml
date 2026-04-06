@@ -1,10 +1,8 @@
 # {{THEME_NAME}} theme for Yazi (generated — do not edit by hand)
+# Requires yazi 26.x+ (uses [mgr], [indicator], [tabs], url= in filetype rules)
 
-[manager]
+[mgr]
 cwd = { fg = "{{ACCENT}}" }
-
-hovered         = { reversed = true }
-preview_hovered = { underline = true }
 
 find_keyword  = { fg = "{{ACCENT}}", bold = true, italic = true, underline = true }
 find_position = { fg = "{{MAGENTA}}", bg = "reset", bold = true, italic = true }
@@ -14,16 +12,20 @@ marker_cut      = { fg = "{{BRIGHT_RED}}", bg = "{{BRIGHT_RED}}" }
 marker_marked   = { fg = "{{BRIGHT_CYAN}}", bg = "{{BRIGHT_CYAN}}" }
 marker_selected = { fg = "{{ACCENT}}", bg = "{{ACCENT}}" }
 
-tab_active   = { reversed = true }
-tab_inactive = {}
-tab_width    = 1
-
 count_copied   = { fg = "{{BG}}", bg = "{{GREEN}}" }
 count_cut      = { fg = "{{BG}}", bg = "{{RED}}" }
 count_selected = { fg = "{{BG}}", bg = "{{ACCENT}}" }
 
 border_symbol = "│"
 border_style  = { fg = "{{DIM}}" }
+
+[tabs]
+active   = { reversed = true }
+inactive = {}
+
+[indicator]
+current = { fg = "{{BG}}", bg = "{{YELLOW}}" }
+preview = { underline = true }
 
 [status]
 separator_open  = ""
@@ -45,23 +47,23 @@ permissions_x = { fg = "{{CYAN}}" }
 permissions_s = { fg = "{{DIM}}" }
 
 [input]
-border   = { fg = "{{BLUE}}" }
+border   = { fg = "{{ACCENT}}" }
 title    = {}
 value    = {}
 selected = { reversed = true }
 
 [select]
-border   = { fg = "{{BLUE}}" }
+border   = { fg = "{{ACCENT}}" }
 active   = { fg = "{{MAGENTA}}", bold = true }
 inactive = {}
 
 [completion]
-border   = { fg = "{{BLUE}}" }
+border   = { fg = "{{ACCENT}}" }
 active   = { reversed = true }
 inactive = {}
 
 [tasks]
-border  = { fg = "{{BLUE}}" }
+border  = { fg = "{{ACCENT}}" }
 title   = {}
 hovered = { fg = "{{MAGENTA}}", underline = true }
 
@@ -81,13 +83,12 @@ hovered = { reversed = true, bold = true }
 footer  = { fg = "{{BG}}", bg = "{{SUBTLE}}" }
 
 [filetype]
-
 rules = [
 	{ mime = "image/*", fg = "{{CYAN}}" },
 	{ mime = "{audio,video}/*", fg = "{{YELLOW}}" },
 	{ mime = "application/*zip*", fg = "{{MAGENTA}}" },
 	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "{{MAGENTA}}" },
 	{ mime = "application/{pdf,doc,rtf}", fg = "{{GREEN}}" },
-	{ name = "*", fg = "{{SUBTLE}}" },
-	{ name = "*/", fg = "{{FG}}" },
+	{ url = "*", fg = "{{SUBTLE}}" },
+	{ url = "*/", fg = "{{FG}}" },
 ]

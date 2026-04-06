@@ -1,10 +1,8 @@
 # Whaleen theme for Yazi (generated — do not edit by hand)
+# Requires yazi 26.x+ (uses [mgr], [indicator], [tabs], url= in filetype rules)
 
-[manager]
+[mgr]
 cwd = { fg = "#C3A6FF" }
-
-hovered         = { reversed = true }
-preview_hovered = { underline = true }
 
 find_keyword  = { fg = "#C3A6FF", bold = true, italic = true, underline = true }
 find_position = { fg = "#e29eca", bg = "reset", bold = true, italic = true }
@@ -14,16 +12,20 @@ marker_cut      = { fg = "#ff8080", bg = "#ff8080" }
 marker_marked   = { fg = "#f591b2", bg = "#f591b2" }
 marker_selected = { fg = "#C3A6FF", bg = "#C3A6FF" }
 
-tab_active   = { reversed = true }
-tab_inactive = {}
-tab_width    = 1
-
 count_copied   = { fg = "#101010", bg = "#90b99f" }
 count_cut      = { fg = "#101010", bg = "#f5a191" }
 count_selected = { fg = "#101010", bg = "#C3A6FF" }
 
 border_symbol = "│"
 border_style  = { fg = "#7E7E7E" }
+
+[tabs]
+active   = { reversed = true }
+inactive = {}
+
+[indicator]
+current = { fg = "#101010", bg = "#e6b99d" }
+preview = { underline = true }
 
 [status]
 separator_open  = ""
@@ -45,23 +47,23 @@ permissions_x = { fg = "#ea83a5" }
 permissions_s = { fg = "#7E7E7E" }
 
 [input]
-border   = { fg = "#aca1cf" }
+border   = { fg = "#C3A6FF" }
 title    = {}
 value    = {}
 selected = { reversed = true }
 
 [select]
-border   = { fg = "#aca1cf" }
+border   = { fg = "#C3A6FF" }
 active   = { fg = "#e29eca", bold = true }
 inactive = {}
 
 [completion]
-border   = { fg = "#aca1cf" }
+border   = { fg = "#C3A6FF" }
 active   = { reversed = true }
 inactive = {}
 
 [tasks]
-border  = { fg = "#aca1cf" }
+border  = { fg = "#C3A6FF" }
 title   = {}
 hovered = { fg = "#e29eca", underline = true }
 
@@ -81,13 +83,12 @@ hovered = { reversed = true, bold = true }
 footer  = { fg = "#101010", bg = "#A0A0A0" }
 
 [filetype]
-
 rules = [
 	{ mime = "image/*", fg = "#ea83a5" },
 	{ mime = "{audio,video}/*", fg = "#e6b99d" },
 	{ mime = "application/*zip*", fg = "#e29eca" },
 	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "#e29eca" },
 	{ mime = "application/{pdf,doc,rtf}", fg = "#90b99f" },
-	{ name = "*", fg = "#A0A0A0" },
-	{ name = "*/", fg = "#ffffff" },
+	{ url = "*", fg = "#A0A0A0" },
+	{ url = "*/", fg = "#ffffff" },
 ]
