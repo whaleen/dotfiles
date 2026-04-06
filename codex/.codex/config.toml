@@ -1,6 +1,33 @@
 personality = "pragmatic"
-model = "gpt-5.3-codex"
+model = "gpt-5.4"
 ask_for_approval = "never"
 
 [tools]
 allow_all = true
+
+[projects."/Users/josh/Projects"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_orthfx/sites"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_whaleen/warehouse"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_local/cam"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_whaleen/pemguin"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_orthfx"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_nothingdao/den"]
+trust_level = "trusted"
+
+[projects."/Users/josh/Projects/_whaleen/tiles"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.3-codex" = "gpt-5.4"

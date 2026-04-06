@@ -129,7 +129,7 @@ info "Stowing dotfiles"
 
 STOW_PACKAGES=(
   zsh bash git npm
-  ghostty cursor gh yabai btop yazi opencode lsd
+  ghostty cursor gh yabai sketchybar btop yazi opencode lsd
   warp claude gemini codex scripts
 )
 
