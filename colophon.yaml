@@ -162,16 +162,29 @@ media:
       url: https://github.com/hpjansson/chafa
       note: Terminal image viewer
 
+window_management:
+  name: Window Management
+  items:
+    - name: yabai
+      url: https://github.com/koekeishiya/yabai
+      note: Tiling window manager, BSP layout
+    - name: skhd
+      url: https://github.com/koekeishiya/skhd
+      note: Hotkey daemon, instant space switching
+    - name: Sketchybar
+      url: https://github.com/FelixKratz/SketchyBar
+      note: Custom menu bar
+
 theme:
   name: Theme System
   description: >
-    All tools share the Vesper color palette via a centralized theme system.
-    Colors are defined once in vesper.sh and propagated to Ghostty, Warp,
-    Cursor, Yazi, btop, lsd, and fzf through template generation.
+    All tools share the Whaleen color palette via a centralized theme system.
+    Colors are defined once in whaleen.sh and propagated to Ghostty, Warp,
+    Cursor, Yazi, btop, lsd, fzf, and Sketchybar through template generation.
   palette:
     bg: "#101010"
     fg: "#ffffff"
-    accent: "#FFC799"
+    accent: "#C3A6FF"
     surface: "#232323"
     muted: "#7E7E7E"
     red: "#f5a191"
@@ -196,6 +209,8 @@ dotfiles:
     - cursor
     - gh
     - yabai
+    - skhd
+    - sketchybar
     - btop
     - yazi
     - lsd

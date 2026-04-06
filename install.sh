@@ -144,7 +144,15 @@ ln -sf "$DOTFILES/cursor/.config/cursor/settings.json" \
        "$HOME/Library/Application Support/Cursor/User/settings.json"
 ok "cursor → Application Support"
 
-# ---------- 12. macOS defaults ----------
+# ---------- 12. yabai scripting addition sudoers ----------
+info "yabai scripting addition (sudoers)"
+YABAI_BIN="$(which yabai)"
+YABAI_HASH="$(shasum -a 256 "$YABAI_BIN" | cut -d ' ' -f 1)"
+echo "$(whoami) ALL=(root) NOPASSWD: sha256:${YABAI_HASH} ${YABAI_BIN} --load-sa" \
+  | sudo tee /private/etc/sudoers.d/yabai > /dev/null
+ok "yabai sudoers"
+
+# ---------- 13. macOS defaults ----------
 info "macOS defaults"
 defaults write com.apple.dock tilesize -int 16
 defaults write com.apple.dock autohide -bool true
