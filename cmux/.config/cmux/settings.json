@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux-settings.schema.json",
+  "schemaVersion": 1,
+
+  "app": {
+    "appearance": "dark",
+    "newWorkspacePlacement": "afterCurrent",
+    "sendAnonymousTelemetry": false,
+    "warnBeforeQuit": false
+  },
+
+  "sidebarAppearance": {
+    "matchTerminalBackground": true,
+    "darkModeTintColor": "#C3A6FF",
+    "tintOpacity": 0.08
+  },
+
+  "workspaceColors": {
+    "indicatorStyle": "leftRail"
+  },
+
+  "automation": {
+    "claudeCodeIntegration": true
+  },
+
+  "browser": {
+    "openTerminalLinksInCmuxBrowser": true,
+    "theme": "dark"
+  }
+}

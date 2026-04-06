@@ -1,7 +1,30 @@
-#!/bin/sh
+#!/bin/bash
 
-# The $SELECTED variable is available for space components and indicates if
-# the space invoking this script (with name: $NAME) is currently selected:
-# https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
+source "$CONFIG_DIR/colors.sh"
+source "$CONFIG_DIR/plugins/icon_map_fn.sh"
 
-sketchybar --set "$NAME" background.drawing="$SELECTED"
+# Get apps open in this space via yabai
+apps=$(yabai -m query --windows --space "$SID" 2>/dev/null \
+  | jq -r '.[].app' 2>/dev/null | sort -u)
+
+icon_strip=" "
+if [ -n "$apps" ]; then
+  while IFS= read -r app; do
+    icon_map "$app"
+    icon_strip+="$icon_result "
+  done <<< "$apps"
+fi
+
+# Highlight focused space
+if [ "$SELECTED" = "true" ]; then
+  sketchybar --set "$NAME" \
+    background.color="$ACCENT_COLOR_40" \
+    background.border_width=1 \
+    background.border_color="$ACCENT_COLOR" \
+    label="$icon_strip"
+else
+  sketchybar --set "$NAME" \
+    background.color=0x22ffffff \
+    background.border_width=0 \
+    label="$icon_strip"
+fi

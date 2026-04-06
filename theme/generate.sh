@@ -10,7 +10,7 @@ ok()   { printf "\033[1;32m  ✓ %s\033[0m\n" "$1"; }
 # Source the palette
 source "$THEME_DIR/whaleen.sh"
 
-# Derive sketchybar variants (0xAARRGGBB format)
+# Derive sketchybar shell variants (0xAARRGGBB string format)
 sb()    { echo "0xFF${1#\#}"; }
 sb_40() { echo "0x40${1#\#}"; }
 BG_SB=$(sb "$BG")
@@ -18,6 +18,21 @@ BG_SB_40=$(sb_40 "$BG")
 FG_SB=$(sb "$FG")
 ACCENT_SB=$(sb "$ACCENT")
 ACCENT_SB_40=$(sb_40 "$ACCENT")
+
+# Derive Lua color variants (0xFFRRGGBB integer format — no quotes in output)
+lua_col() { echo "0xFF${1#\#}"; }
+BG_LUA=$(lua_col "$BG")
+FG_LUA=$(lua_col "$FG")
+ACCENT_LUA=$(lua_col "$ACCENT")
+SURFACE0_LUA=$(lua_col "$SURFACE0")
+SURFACE1_LUA=$(lua_col "$SURFACE1")
+SURFACE2_LUA=$(lua_col "$SURFACE2")
+SURFACE3_LUA=$(lua_col "$SURFACE3")
+SURFACE4_LUA=$(lua_col "$SURFACE4")
+DIM_LUA=$(lua_col "$DIM")
+SUBTLE_LUA=$(lua_col "$SUBTLE")
+ACCENT_LUA_40="0x66${ACCENT#\#}"
+BG_LUA_F0="0xf0${BG#\#}"
 
 # Collect all variables for substitution
 VARS=(
@@ -28,6 +43,9 @@ VARS=(
   BRIGHT_BLACK BRIGHT_RED BRIGHT_GREEN BRIGHT_YELLOW
   BRIGHT_BLUE BRIGHT_MAGENTA BRIGHT_CYAN BRIGHT_WHITE
   BG_SB BG_SB_40 FG_SB ACCENT_SB ACCENT_SB_40
+  BG_LUA FG_LUA ACCENT_LUA ACCENT_LUA_40 BG_LUA_F0
+  SURFACE0_LUA SURFACE1_LUA SURFACE2_LUA SURFACE3_LUA SURFACE4_LUA
+  DIM_LUA SUBTLE_LUA
 )
 
 # Build a sed command that replaces all {{VAR}} placeholders
@@ -96,8 +114,9 @@ cat > "$DOTFILES/cursor/.cursor/extensions/whaleen/package.json" << 'MANIFEST'
 MANIFEST
 ok "cursor"
 
-# Sketchybar
-stamp "$THEME_DIR/templates/sketchybarrc" "$DOTFILES/sketchybar/.config/sketchybar/sketchybarrc"
+# Sketchybar — generate only the colors files, Lua config is static
+stamp "$THEME_DIR/templates/sketchybar-colors.sh" "$DOTFILES/sketchybar/.config/sketchybar/colors.sh"
+stamp "$THEME_DIR/templates/sketchybar-colors.lua" "$DOTFILES/sketchybar/.config/sketchybar/colors.lua"
 ok "sketchybar"
 
 info "Done — restow any changed packages to apply"

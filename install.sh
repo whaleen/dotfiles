@@ -124,13 +124,22 @@ else
   echo "    avm not found — install it via: cargo install --git https://github.com/coral-xyz/anchor avm"
 fi
 
-# ---------- 11. Stow dotfiles ----------
+# ---------- 11. SbarLua (sketchybar Lua module) ----------
+info "SbarLua"
+if [ -f "$HOME/.local/share/sketchybar_lua/sketchybar.so" ]; then
+  skip "SbarLua"
+else
+  (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
+  ok "SbarLua"
+fi
+
+# ---------- 12. Stow dotfiles ----------
 info "Stowing dotfiles"
 
 STOW_PACKAGES=(
   zsh bash git npm
   ghostty cursor gh yabai skhd sketchybar btop yazi opencode lsd
-  warp claude gemini codex scripts
+  warp claude gemini codex cmux scripts
 )
 
 for pkg in "${STOW_PACKAGES[@]}"; do
@@ -144,7 +153,7 @@ ln -sf "$DOTFILES/cursor/.config/cursor/settings.json" \
        "$HOME/Library/Application Support/Cursor/User/settings.json"
 ok "cursor → Application Support"
 
-# ---------- 12. yabai scripting addition sudoers ----------
+# ---------- 13. yabai scripting addition sudoers ----------
 info "yabai scripting addition (sudoers)"
 YABAI_BIN="$(which yabai)"
 YABAI_HASH="$(shasum -a 256 "$YABAI_BIN" | cut -d ' ' -f 1)"
@@ -152,7 +161,7 @@ echo "$(whoami) ALL=(root) NOPASSWD: sha256:${YABAI_HASH} ${YABAI_BIN} --load-sa
   | sudo tee /private/etc/sudoers.d/yabai > /dev/null
 ok "yabai sudoers"
 
-# ---------- 13. macOS defaults ----------
+# ---------- 14. macOS defaults ----------
 info "macOS defaults"
 defaults write com.apple.dock tilesize -int 16
 defaults write com.apple.dock autohide -bool true

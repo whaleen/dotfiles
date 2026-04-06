@@ -14,9 +14,12 @@ editors:
 terminals:
   name: Terminals
   items:
+    - name: cmux
+      url: https://cmux.com
+      note: Multi-agent terminal built on Ghostty
     - name: Ghostty
       url: https://ghostty.org
-      note: Primary terminal, GPU-accelerated
+      note: GPU-accelerated terminal
     - name: Warp
       url: https://warp.dev
       note: AI-powered terminal
@@ -219,6 +222,7 @@ dotfiles:
     - gemini
     - codex
     - opencode
+    - cmux
     - scripts
 
 site:
