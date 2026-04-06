@@ -1,9 +1,9 @@
-# Whaleen theme for sketchybar (generated — do not edit by hand)
+# {{THEME_NAME}} theme for sketchybar (generated — do not edit by hand)
 
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
 ##### Bar Appearance #####
-sketchybar --bar position=top height=24 blur_radius=0 color=0xFF101010
+sketchybar --bar position=top height=24 blur_radius=0 color={{BG_SB}}
 
 ##### Changing Defaults #####
 default=(
@@ -11,8 +11,8 @@ default=(
   padding_right=4
   icon.font="Hack Nerd Font:Regular:13.0"
   label.font="JetBrainsMono Nerd Font:Regular:12.0"
-  icon.color=0xFFffffff
-  label.color=0xFFffffff
+  icon.color={{FG_SB}}
+  label.color={{FG_SB}}
   icon.padding_left=4
   icon.padding_right=2
   label.padding_left=2
@@ -30,7 +30,7 @@ do
     icon="${SPACE_ICONS[i]}"
     icon.padding_left=6
     icon.padding_right=6
-    background.color=0x40C3A6FF
+    background.color={{ACCENT_SB_40}}
     background.corner_radius=4
     background.height=16
     label.drawing=off

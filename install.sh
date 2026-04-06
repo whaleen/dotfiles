@@ -129,7 +129,7 @@ info "Stowing dotfiles"
 
 STOW_PACKAGES=(
   zsh bash git npm
-  ghostty cursor gh yabai sketchybar btop yazi opencode lsd
+  ghostty cursor gh yabai skhd sketchybar btop yazi opencode lsd
   warp claude gemini codex scripts
 )
 
@@ -148,6 +148,7 @@ ok "cursor → Application Support"
 info "macOS defaults"
 defaults write com.apple.dock tilesize -int 16
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool true
 killall Dock 2>/dev/null || true
 ok "Dock preferences"
 

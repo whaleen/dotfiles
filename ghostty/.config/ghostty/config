@@ -1,10 +1,10 @@
-# Vesper theme for Ghostty (generated — do not edit by hand)
+# Whaleen theme for Ghostty (generated — do not edit by hand)
 
 background = #101010
 foreground = #ffffff
-cursor-color = #FFC799
+cursor-color = #C3A6FF
 cursor-text = #101010
-selection-background = #FFC799
+selection-background = #C3A6FF
 selection-foreground = #101010
 
 # ANSI 0-7 (normal)
@@ -21,7 +21,7 @@ palette = 7=#A0A0A0
 palette = 8=#7E7E7E
 palette = 9=#ff8080
 palette = 10=#99FFE4
-palette = 11=#FFC799
+palette = 11=#D4BCFF
 palette = 12=#b9aeda
 palette = 13=#ecaad6
 palette = 14=#f591b2

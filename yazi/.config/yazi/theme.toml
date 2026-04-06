@@ -1,18 +1,18 @@
-# Vesper theme for Yazi (generated — do not edit by hand)
+# Whaleen theme for Yazi (generated — do not edit by hand)
 
 [manager]
-cwd = { fg = "#FFC799" }
+cwd = { fg = "#C3A6FF" }
 
 hovered         = { reversed = true }
 preview_hovered = { underline = true }
 
-find_keyword  = { fg = "#FFC799", bold = true, italic = true, underline = true }
+find_keyword  = { fg = "#C3A6FF", bold = true, italic = true, underline = true }
 find_position = { fg = "#e29eca", bg = "reset", bold = true, italic = true }
 
 marker_copied   = { fg = "#99FFE4", bg = "#99FFE4" }
 marker_cut      = { fg = "#ff8080", bg = "#ff8080" }
 marker_marked   = { fg = "#f591b2", bg = "#f591b2" }
-marker_selected = { fg = "#FFC799", bg = "#FFC799" }
+marker_selected = { fg = "#C3A6FF", bg = "#C3A6FF" }
 
 tab_active   = { reversed = true }
 tab_inactive = {}
@@ -20,7 +20,7 @@ tab_width    = 1
 
 count_copied   = { fg = "#101010", bg = "#90b99f" }
 count_cut      = { fg = "#101010", bg = "#f5a191" }
-count_selected = { fg = "#101010", bg = "#FFC799" }
+count_selected = { fg = "#101010", bg = "#C3A6FF" }
 
 border_symbol = "│"
 border_style  = { fg = "#7E7E7E" }

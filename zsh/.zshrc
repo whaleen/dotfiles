@@ -67,7 +67,7 @@ do
 done
 
 # fzf
-[ -f "$HOME/.config/vesper-fzf.sh" ] && source "$HOME/.config/vesper-fzf.sh"
+[ -f "$HOME/.config/whaleen-fzf.sh" ] && source "$HOME/.config/whaleen-fzf.sh"
 if command -v fzf >/dev/null 2>&1; then
   if fzf --zsh >/dev/null 2>&1; then
     eval "$(fzf --zsh)"

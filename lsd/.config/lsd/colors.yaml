@@ -1,4 +1,4 @@
-# Vesper theme for lsd (generated — do not edit by hand)
+# Whaleen theme for lsd (generated — do not edit by hand)
 user: "#e6b99d"
 group: "#7E7E7E"
 permission:
@@ -18,7 +18,7 @@ size:
   none: "#343434"
   small: "#90b99f"
   medium: "#e6b99d"
-  large: "#FFC799"
+  large: "#C3A6FF"
 inode:
   valid: "#7E7E7E"
   invalid: "#ff8080"
@@ -32,8 +32,8 @@ git-status:
   ignored: "#343434"
   new-in-index: "#99FFE4"
   new-in-workdir: "#99FFE4"
-  typechange: "#FFC799"
+  typechange: "#C3A6FF"
   deleted: "#ff8080"
   renamed: "#aca1cf"
-  modified: "#FFC799"
+  modified: "#C3A6FF"
   conflicted: "#ff8080"
