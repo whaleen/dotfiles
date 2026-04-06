@@ -1,0 +1,17 @@
+# Whaleen theme for Pemguin (generated — do not edit by hand)
+[theme]
+accent  = "#C3A6FF"
+sel_fg  = "#101010"
+fg_dim  = "#A0A0A0"
+fg_xdim = "#505050"
+green   = "#99FFE4"
+red     = "#f5a191"
+yellow  = "#e6b99d"
+purple  = "#aca1cf"
+
+[projects]
+root = "~/Projects"
+
+[setup]
+ignore = []
+disable = []

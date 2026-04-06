@@ -11,7 +11,7 @@ Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 # Re-stow dotfiles only (no installs)
 stow -t ~ -d ~/Projects/_whaleen/dotfiles --restow zsh bash git npm \
-  ghostty cursor gh yabai skhd sketchybar btop yazi opencode lsd \
+  ghostty cursor gh yabai skhd sketchybar btop yazi lazygit opencode lsd \
   warp claude gemini codex cmux scripts
 ```
 
@@ -30,7 +30,8 @@ dotfiles/
   gh/               .config/gh/config.yml
   yabai/            .config/yabai/yabairc
   skhd/             .config/skhd/skhdrc
-  sketchybar/       .config/sketchybar/sketchybarrc, plugins/
+  sketchybar/       .config/sketchybar/sketchybarrc, items/, helpers/
+  lazygit/          .config/lazygit/config.yml
   btop/             .config/btop/btop.conf, .config/btop/themes/whaleen.theme
   yazi/             .config/yazi/yazi.toml, .config/yazi/theme.toml
   lsd/              .config/lsd/colors.yaml
@@ -58,7 +59,7 @@ $EDITOR theme/whaleen.sh
 stow -t ~ --restow ghostty warp yazi btop lsd cursor zsh sketchybar
 ```
 
-Generated configs: Ghostty, Warp, Yazi, btop, lsd, fzf, Cursor, Sketchybar.
+Generated configs: Ghostty, Warp, Yazi, btop, lsd, fzf, Cursor, Sketchybar, Lazygit.
 
 ## Window Management
 

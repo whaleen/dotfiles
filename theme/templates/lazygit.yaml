@@ -1,0 +1,32 @@
+# {{THEME_NAME}} theme for lazygit (generated — do not edit by hand)
+gui:
+  nerdFontsVersion: "3"
+  showIcons: true
+  border: rounded
+  theme:
+    activeBorderColor:
+      - "{{ACCENT}}"
+      - bold
+    inactiveBorderColor:
+      - "{{SURFACE4}}"
+    searchingActiveBorderColor:
+      - "{{BRIGHT_GREEN}}"
+      - bold
+    optionsTextColor:
+      - "{{SUBTLE}}"
+    selectedLineBgColor:
+      - "{{SURFACE2}}"
+    inactiveViewSelectedLineBgColor:
+      - "{{SURFACE1}}"
+    cherryPickedCommitFgColor:
+      - "{{ACCENT}}"
+    cherryPickedCommitBgColor:
+      - "{{SURFACE2}}"
+    markedBaseCommitFgColor:
+      - "{{YELLOW}}"
+    markedBaseCommitBgColor:
+      - "{{SURFACE2}}"
+    unstagedChangesColor:
+      - "{{RED}}"
+    defaultFgColor:
+      - "{{FG}}"

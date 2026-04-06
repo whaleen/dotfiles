@@ -1,0 +1,32 @@
+# Whaleen theme for lazygit (generated — do not edit by hand)
+gui:
+  nerdFontsVersion: "3"
+  showIcons: true
+  border: rounded
+  theme:
+    activeBorderColor:
+      - "#C3A6FF"
+      - bold
+    inactiveBorderColor:
+      - "#343434"
+    searchingActiveBorderColor:
+      - "#99FFE4"
+      - bold
+    optionsTextColor:
+      - "#A0A0A0"
+    selectedLineBgColor:
+      - "#232323"
+    inactiveViewSelectedLineBgColor:
+      - "#1C1C1C"
+    cherryPickedCommitFgColor:
+      - "#C3A6FF"
+    cherryPickedCommitBgColor:
+      - "#232323"
+    markedBaseCommitFgColor:
+      - "#e6b99d"
+    markedBaseCommitBgColor:
+      - "#232323"
+    unstagedChangesColor:
+      - "#f5a191"
+    defaultFgColor:
+      - "#ffffff"

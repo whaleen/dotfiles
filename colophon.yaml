@@ -80,7 +80,7 @@ shell:
       note: Terminal markdown viewer
     - name: lazygit
       url: https://github.com/jesseduffield/lazygit
-      note: Terminal git UI
+      note: Terminal git UI, themed via whaleen
 
 languages:
   name: Languages & Runtimes

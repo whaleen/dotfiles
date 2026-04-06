@@ -1,0 +1,17 @@
+# {{THEME_NAME}} theme for Pemguin (generated — do not edit by hand)
+[theme]
+accent  = "{{ACCENT}}"
+sel_fg  = "{{BG}}"
+fg_dim  = "{{SUBTLE}}"
+fg_xdim = "{{COMMENT}}"
+green   = "{{BRIGHT_GREEN}}"
+red     = "{{RED}}"
+yellow  = "{{YELLOW}}"
+purple  = "{{BLUE}}"
+
+[projects]
+root = "~/Projects"
+
+[setup]
+ignore = []
+disable = []

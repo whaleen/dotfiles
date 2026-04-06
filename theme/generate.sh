@@ -114,6 +114,15 @@ cat > "$DOTFILES/cursor/.cursor/extensions/whaleen/package.json" << 'MANIFEST'
 MANIFEST
 ok "cursor"
 
+# Pemguin
+stamp "$THEME_DIR/templates/pemguin.toml" "$DOTFILES/pemguin/.pemguin.toml"
+ok "pemguin"
+
+# Lazygit
+mkdir -p "$DOTFILES/lazygit/.config/lazygit"
+stamp "$THEME_DIR/templates/lazygit.yaml" "$DOTFILES/lazygit/.config/lazygit/config.yml"
+ok "lazygit"
+
 # Sketchybar — generate only the colors files, Lua config is static
 stamp "$THEME_DIR/templates/sketchybar-colors.sh" "$DOTFILES/sketchybar/.config/sketchybar/colors.sh"
 stamp "$THEME_DIR/templates/sketchybar-colors.lua" "$DOTFILES/sketchybar/.config/sketchybar/colors.lua"
