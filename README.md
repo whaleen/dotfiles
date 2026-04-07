@@ -46,20 +46,39 @@ dotfiles/
 
 ## Theme
 
-All tools share a single color palette defined in `theme/whaleen.sh`.
+Palettes live in `theme/palettes/dark.sh` and `theme/palettes/light.sh`. Running `generate.sh` stamps every tool config from templates using `{{VAR}}` substitution.
 
 ```bash
-# Edit the master palette
-$EDITOR theme/whaleen.sh
+# Edit a palette
+$EDITOR theme/palettes/dark.sh
 
 # Regenerate all tool configs
-./theme/generate.sh
+./theme/generate.sh --palette=dark   # or light / all
 
-# Restow to apply
-stow -t ~ --restow ghostty warp yazi btop lsd cursor zsh sketchybar
+# Auto-switch based on current macOS appearance
+./theme/generate.sh --palette=auto
 ```
 
-Generated configs: Ghostty, Warp, Yazi, btop, lsd, fzf, Cursor, Sketchybar, Lazygit.
+Generated configs: Ghostty, Warp, Yazi, btop, fzf, lsd, Cursor, Sketchybar, Lazygit, Pemguin, Den.
+
+Ghostty and Den configs are written directly to their live locations (not stowed). All other generated configs are in their stow packages and pick up on the next stow run.
+
+### Auto dark/light switching
+
+A LaunchAgent watches `~/Library/Preferences/.GlobalPreferences.plist` and calls `theme-switch.sh auto` whenever macOS appearance changes. State is tracked at `~/.local/state/whaleen-theme` to debounce spurious triggers.
+
+```bash
+# Install or reinstall the LaunchAgent
+./theme/generate.sh --palette=all
+```
+
+### Hot-reload design loop
+
+`pm` (pemguin) and `den` both detect changes to their theme config files within ~250ms and update live without restart. The workflow:
+
+1. Edit `theme/palettes/dark.sh`
+2. Run `./theme/generate.sh --palette=dark`
+3. Watch both TUIs update immediately
 
 ## Window Management
 
@@ -84,7 +103,8 @@ echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut
 ## Scripts
 
 - `install.sh` — Full bootstrap (Homebrew, nvm, Rust, Solana, stow, macOS defaults)
-- `theme/generate.sh` — Regenerate all tool themes from `theme/whaleen.sh`
+- `theme/generate.sh` — Regenerate all tool themes from `theme/palettes/`
+- `theme/theme-switch.sh` — Called by LaunchAgent on appearance change
 
 ## Package Inventories
 
