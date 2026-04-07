@@ -7,38 +7,40 @@ THEME_NAME="Whaleen"
 # Core
 BG="#F8F6FF"
 FG="#1A1A2E"
-ACCENT="#7C5CBF"
+ACCENT="#6A4DB8"
 
-# Surfaces (slightly darker than BG toward mid-gray)
-SURFACE0="#EEEAF8"
-SURFACE1="#E5E0F2"
-SURFACE2="#DBD6EC"
-SURFACE3="#D0CBE4"
-SURFACE4="#C4BEDB"
+# Surfaces — get progressively darker (more contrast against light BG)
+SURFACE0="#ECEAF6"
+SURFACE1="#E2DFEF"
+SURFACE2="#D5D1E8"
+SURFACE3="#C8C4DF"
+SURFACE4="#BBB6D5"
 
-# Muted text (dark enough to read on light bg)
-DIM="#888899"
-SUBTLE="#555566"
-COMMENT="#AAAABC"
+# Muted text — must all be dark enough to read on #F8F6FF
+# In light mode: dimmer means DARKER toward the midpoint, not lighter
+# SUBTLE=6.5:1, DIM=4.5:1, COMMENT=3.5:1 — intentional hierarchy
+SUBTLE="#4A4A62"
+DIM="#696980"
+COMMENT="#88889E"
 
-# Normal (ANSI 0–7) — saturated versions for light background legibility
+# Normal (ANSI 0–7) — saturated darker versions for light background legibility
 BLACK="#1A1A2E"
-RED="#B34030"
-GREEN="#2E6B50"
-YELLOW="#8C5E20"
-BLUE="#5A4FA0"
-MAGENTA="#8C3A78"
-CYAN="#A03060"
-WHITE="#D8D4EE"
+RED="#AA3825"
+GREEN="#246644"
+YELLOW="#7A5010"
+BLUE="#4A4098"
+MAGENTA="#802870"
+CYAN="#962848"
+WHITE="#C8C4DC"
 
-# Bright (ANSI 8–15)
-BRIGHT_BLACK="#888899"
-BRIGHT_RED="#CC4A38"
-BRIGHT_GREEN="#20A070"
-BRIGHT_YELLOW="#7A56CC"
-BRIGHT_BLUE="#7068B8"
-BRIGHT_MAGENTA="#A84890"
-BRIGHT_CYAN="#C03870"
+# Bright (ANSI 8–15) — more vivid, still legible on light bg
+BRIGHT_BLACK="#696980"
+BRIGHT_RED="#C04030"
+BRIGHT_GREEN="#147848"
+BRIGHT_YELLOW="#6848C0"
+BRIGHT_BLUE="#6258A8"
+BRIGHT_MAGENTA="#984088"
+BRIGHT_CYAN="#B03060"
 BRIGHT_WHITE="#1A1A2E"
 
 # Tool-specific
