@@ -1,20 +1,20 @@
 -- Whaleen colors for sketchybar Lua (generated — do not edit by hand)
 return {
-  bg       = 0xFF101010,
-  fg       = 0xFFffffff,
-  accent   = 0xFFC3A6FF,
-  surface0 = 0xFF161616,
-  surface1 = 0xFF1C1C1C,
-  surface2 = 0xFF232323,
-  surface3 = 0xFF282828,
-  surface4 = 0xFF343434,
-  dim      = 0xFF7E7E7E,
-  subtle   = 0xFFA0A0A0,
+  bg       = 0xFFF8F6FF,
+  fg       = 0xFF1A1A2E,
+  accent   = 0xFFB86A2A,
+  surface0 = 0xFFECEAF6,
+  surface1 = 0xFFE2DFEF,
+  surface2 = 0xFFD5D1E8,
+  surface3 = 0xFFC8C4DF,
+  surface4 = 0xFFBBB6D5,
+  dim      = 0xFF696980,
+  subtle   = 0xFF4A4A62,
   transparent = 0x00000000,
 
   bar = {
-    bg     = 0xf0101010,
-    border = 0xFF101010,
+    bg     = 0xf0F8F6FF,
+    border = 0xFFF8F6FF,
   },
 
   with_alpha = function(color, alpha)

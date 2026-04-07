@@ -7,7 +7,7 @@ THEME_NAME="Whaleen"
 # Core
 BG="#F8F6FF"
 FG="#1A1A2E"
-ACCENT="#6A4DB8"
+ACCENT="#B86A2A"
 
 # Surfaces — get progressively darker (more contrast against light BG)
 SURFACE0="#ECEAF6"

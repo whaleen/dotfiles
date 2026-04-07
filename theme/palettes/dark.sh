@@ -7,7 +7,7 @@ THEME_NAME="Whaleen"
 # Core
 BG="#101010"
 FG="#ffffff"
-ACCENT="#C3A6FF"
+ACCENT="#e8b887"
 
 # Surfaces
 SURFACE0="#161616"

@@ -2,10 +2,10 @@
 
 background = #101010
 foreground = #ffffff
-cursor-color = #C3A6FF
+cursor-color = #e8b887
 cursor-text = #101010
 cursor-style = block
-selection-background = #C3A6FF
+selection-background = #e8b887
 selection-foreground = #101010
 bold-color = #ffffff
 minimum-contrast = 1.1

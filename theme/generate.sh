@@ -124,6 +124,11 @@ generate_one() {
   stamp "$THEME_DIR/templates/pemguin.toml" "$DOTFILES/pemguin/.pemguin.toml"
   ok "pemguin"
 
+  # Den
+  mkdir -p "$HOME/.config/den"
+  stamp "$THEME_DIR/templates/den.toml" "$HOME/.config/den/theme.toml"
+  ok "den"
+
   # Lazygit
   mkdir -p "$DOTFILES/lazygit/.config/lazygit"
   stamp "$THEME_DIR/templates/lazygit.yaml" "$DOTFILES/lazygit/.config/lazygit/config.yml"
@@ -173,6 +178,46 @@ MANIFEST
   ok "cursor (manifest)"
 }
 
+# ── Install / reload LaunchAgent ─────────────────────────────────────────────
+install_launch_agent() {
+  local plist="$HOME/Library/LaunchAgents/com.whaleen.theme-switch.plist"
+  local switch_script="$THEME_DIR/theme-switch.sh"
+  local log="/tmp/whaleen-theme-switch.log"
+
+  mkdir -p "$HOME/Library/LaunchAgents"
+  cat > "$plist" << PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.whaleen.theme-switch</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>${switch_script}</string>
+    <string>auto</string>
+  </array>
+  <key>WatchPaths</key>
+  <array>
+    <string>${HOME}/Library/Preferences/.GlobalPreferences.plist</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>${log}</string>
+  <key>StandardErrorPath</key>
+  <string>${log}</string>
+</dict>
+</plist>
+PLIST
+
+  # Load or reload the agent
+  launchctl unload "$plist" 2>/dev/null || true
+  launchctl load -w "$plist"
+  ok "LaunchAgent (com.whaleen.theme-switch)"
+}
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 case "$PALETTE" in
   all)
@@ -180,13 +225,16 @@ case "$PALETTE" in
     generate_one light
     generate_cursor_light
     write_cursor_manifest
+    install_launch_agent
     ;;
   auto)
     local mode
     mode=$(defaults read -g AppleInterfaceStyle 2>/dev/null || echo "Light")
     [[ "$mode" == "Dark" ]] && generate_one dark || generate_one light
-    generate_one dark   # always generate both ghostty themes
+    generate_one dark
     generate_one light
+    generate_cursor_light
+    write_cursor_manifest
     ;;
   dark|light)
     generate_one "$PALETTE"
@@ -207,4 +255,4 @@ case "$PALETTE" in
     ;;
 esac
 
-info "Done. Ghostty switches automatically. Run 'theme-switch light|dark' for other tools."
+info "Done."

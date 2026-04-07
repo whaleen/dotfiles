@@ -1,0 +1,13 @@
+# {{THEME_NAME}} theme for Den (generated — do not edit by hand)
+[theme]
+bg      = "{{BG}}"
+fg      = "{{FG}}"
+accent  = "{{ACCENT}}"
+sel_fg  = "{{BG}}"
+fg_dim  = "{{SUBTLE}}"
+fg_xdim = "{{DIM}}"
+border  = "{{SURFACE2}}"
+surface = "{{SURFACE1}}"
+green   = "{{GREEN}}"
+red     = "{{RED}}"
+yellow  = "{{YELLOW}}"
