@@ -7,9 +7,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Whaleen",
+        "label": "Whaleen Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/whaleen-color-theme.json"
+        "path": "./themes/whaleen-dark-color-theme.json"
+      },
+      {
+        "label": "Whaleen Light",
+        "uiTheme": "vs",
+        "path": "./themes/whaleen-light-color-theme.json"
       }
     ]
   }

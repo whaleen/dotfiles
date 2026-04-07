@@ -1,0 +1,31 @@
+# Whaleen theme for Ghostty (generated — do not edit by hand)
+
+background = #F8F6FF
+foreground = #1A1A2E
+cursor-color = #7C5CBF
+cursor-text = #F8F6FF
+cursor-style = block
+selection-background = #7C5CBF
+selection-foreground = #F8F6FF
+bold-color = #1A1A2E
+minimum-contrast = 1.1
+
+# ANSI 0-7 (normal)
+palette = 0=#1A1A2E
+palette = 1=#B34030
+palette = 2=#2E6B50
+palette = 3=#8C5E20
+palette = 4=#5A4FA0
+palette = 5=#8C3A78
+palette = 6=#A03060
+palette = 7=#D8D4EE
+
+# ANSI 8-15 (bright)
+palette = 8=#888899
+palette = 9=#CC4A38
+palette = 10=#20A070
+palette = 11=#7A56CC
+palette = 12=#7068B8
+palette = 13=#A84890
+palette = 14=#C03870
+palette = 15=#1A1A2E

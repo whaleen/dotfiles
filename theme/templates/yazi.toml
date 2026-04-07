@@ -1,11 +1,15 @@
 # {{THEME_NAME}} theme for Yazi (generated — do not edit by hand)
-# Requires yazi 26.x+ (uses [mgr], [indicator], [tabs], url= in filetype rules)
+# Requires yazi 26.x+
 
 [mgr]
 cwd = { fg = "{{ACCENT}}" }
 
-icon_folder = { fg = "{{FG}}" }
-icon_file   = { fg = "{{SUBTLE}}" }
+icon_folder  = { fg = "{{FG}}" }
+icon_file    = { fg = "{{SUBTLE}}" }
+icon_command = { fg = "{{YELLOW}}" }
+
+hovered        = { fg = "{{BG}}", bg = "{{SURFACE3}}" }
+symlink_target = { fg = "{{DIM}}", italic = true }
 
 find_keyword  = { fg = "{{ACCENT}}", bold = true, italic = true, underline = true }
 find_position = { fg = "{{MAGENTA}}", bg = "reset", bold = true, italic = true }
@@ -23,31 +27,57 @@ border_symbol = "│"
 border_style  = { fg = "{{DIM}}" }
 
 [tabs]
-active   = { reversed = true }
-inactive = {}
+active   = { fg = "{{FG}}", bold = true }
+inactive = { fg = "{{DIM}}" }
 
 [indicator]
 current = { fg = "{{BG}}", bg = "{{YELLOW}}" }
+parent  = { fg = "{{BG}}", bg = "{{SURFACE4}}" }
 preview = { underline = true }
+
+[mode]
+normal_main = { fg = "{{BG}}", bg = "{{BLUE}}",  bold = true }
+normal_alt  = { fg = "{{BLUE}}",  bg = "{{SURFACE2}}" }
+select_main = { fg = "{{BG}}", bg = "{{GREEN}}", bold = true }
+select_alt  = { fg = "{{GREEN}}", bg = "{{SURFACE2}}" }
+unset_main  = { fg = "{{BG}}", bg = "{{RED}}",   bold = true }
+unset_alt   = { fg = "{{RED}}",   bg = "{{SURFACE2}}" }
 
 [status]
 separator_open  = ""
 separator_close = ""
 separator_style = { fg = "{{DIM}}" }
 
-mode_normal = { fg = "{{BG}}", bg = "{{BLUE}}", bold = true }
-mode_select = { fg = "{{BG}}", bg = "{{GREEN}}", bold = true }
-mode_unset  = { fg = "{{BG}}", bg = "{{RED}}", bold = true }
-
 progress_label  = { bold = true }
 progress_normal = { fg = "{{BLUE}}", bg = "{{BG}}" }
-progress_error  = { fg = "{{RED}}", bg = "{{BG}}" }
+progress_error  = { fg = "{{RED}}",  bg = "{{BG}}" }
 
 permissions_t = { fg = "{{GREEN}}" }
 permissions_r = { fg = "{{YELLOW}}" }
 permissions_w = { fg = "{{RED}}" }
 permissions_x = { fg = "{{CYAN}}" }
 permissions_s = { fg = "{{DIM}}" }
+perm_type     = { fg = "{{SUBTLE}}" }
+perm_sep      = { fg = "{{COMMENT}}" }
+
+[spot]
+tbl_col  = { fg = "{{ACCENT}}", bold = true }
+tbl_cell = { fg = "{{FG}}" }
+
+[notify]
+title_info  = { fg = "{{BLUE}}" }
+title_warn  = { fg = "{{YELLOW}}" }
+title_error = { fg = "{{RED}}" }
+icon_info  = ""
+icon_warn  = ""
+icon_error = ""
+
+[confirm]
+title   = { fg = "{{ACCENT}}", bold = true }
+content = { fg = "{{FG}}" }
+list    = { fg = "{{SUBTLE}}" }
+btn_yes = { fg = "{{BG}}", bg = "{{GREEN}}", bold = true }
+btn_no  = { fg = "{{BG}}", bg = "{{RED}}",   bold = true }
 
 [input]
 border   = { fg = "{{ACCENT}}" }
@@ -87,11 +117,12 @@ footer  = { fg = "{{BG}}", bg = "{{SUBTLE}}" }
 
 [filetype]
 rules = [
-	{ mime = "image/*", fg = "{{CYAN}}" },
-	{ mime = "{audio,video}/*", fg = "{{YELLOW}}" },
-	{ mime = "application/*zip*", fg = "{{MAGENTA}}" },
+	{ mime = "image/*",                                        fg = "{{CYAN}}" },
+	{ mime = "{audio,video}/*",                                fg = "{{YELLOW}}" },
+	{ mime = "application/*zip*",                              fg = "{{MAGENTA}}" },
 	{ mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "{{MAGENTA}}" },
-	{ mime = "application/{pdf,doc,rtf}", fg = "{{GREEN}}" },
-	{ mime = "inode/directory", fg = "{{FG}}" },
+	{ mime = "application/{pdf,doc,rtf}",                      fg = "{{GREEN}}" },
+	{ mime = "text/*",                                         fg = "{{SUBTLE}}" },
+	{ mime = "inode/directory",                                fg = "{{FG}}" },
 	{ url = "*", fg = "{{SUBTLE}}" },
 ]

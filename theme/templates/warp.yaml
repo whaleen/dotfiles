@@ -21,4 +21,4 @@ terminal_colors:
     black: "{{BRIGHT_BLACK}}"
     red: "{{BRIGHT_RED}}"
     cyan: "{{BRIGHT_CYAN}}"
-details: "darker"
+details: "{{WARP_DETAILS}}"
