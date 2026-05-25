@@ -1,5 +1,3 @@
 
 
-export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
-
-. "$HOME/.cargo/env"
+[ -f "$HOME/.profile" ] && . "$HOME/.profile"

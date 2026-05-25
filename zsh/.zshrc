@@ -164,7 +164,6 @@ eval "$(zoxide init zsh)"
 [ -f "$HOME/Projects/obsidian-vault/sync.sh" ] && "$HOME/Projects/obsidian-vault/sync.sh" &>/dev/null &
 
 # AI CLI YOLO Aliases
-alias codex="codex --dangerously-bypass-approvals-and-sandbox"
 alias claude="claude --dangerously-skip-permissions"
 
 export PEMGUIN_DIR=~/Projects/_whaleen/pemguin

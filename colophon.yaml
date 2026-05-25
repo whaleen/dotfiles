@@ -14,9 +14,6 @@ editors:
 terminals:
   name: Terminals
   items:
-    - name: cmux
-      url: https://cmux.com
-      note: Multi-agent terminal built on Ghostty
     - name: Ghostty
       url: https://ghostty.org
       note: GPU-accelerated terminal
@@ -33,9 +30,6 @@ ai:
     - name: Gemini CLI
       url: https://github.com/google-gemini/gemini-cli
       note: Google AI CLI
-    - name: Codex
-      url: https://github.com/openai/codex
-      note: OpenAI CLI agent
     - name: Grok CLI
       url: https://github.com/vibe-kit/grok-cli
       note: xAI CLI
@@ -220,9 +214,7 @@ dotfiles:
     - warp
     - claude
     - gemini
-    - codex
     - opencode
-    - cmux
     - scripts
 
 site:

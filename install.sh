@@ -139,7 +139,7 @@ info "Stowing dotfiles"
 STOW_PACKAGES=(
   zsh bash git npm
   ghostty cursor gh yabai skhd sketchybar btop yazi lazygit opencode lsd
-  warp claude gemini codex cmux pemguin scripts
+  warp claude gemini pemguin scripts
 )
 
 for pkg in "${STOW_PACKAGES[@]}"; do
