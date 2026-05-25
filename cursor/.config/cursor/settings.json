@@ -7,7 +7,7 @@
     },
     "git.confirmSync": false,
     "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Cursor Light",
+    "workbench.preferredLightColorTheme": "Whaleen Light",
     "editor.accessibilitySupport": "off",
-    "workbench.preferredDarkColorTheme": "Vesper Custom"
+    "workbench.preferredDarkColorTheme": "Whaleen Dark"
 }
